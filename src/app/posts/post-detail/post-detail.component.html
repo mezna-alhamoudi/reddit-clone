@@ -1,0 +1,15 @@
+<!-- post-detail.component.html -->
+
+<div class="post-detail-container">
+  <div class="post-detail">
+    <div class="post-header">
+      <h2 class="post-title">{{ post?.title }}</h2>
+      <p class="post-author">Posted by: {{ post.authorUsername }}</p>
+    </div>
+    <div class="post-content">
+      <p>{{ post?.content }}</p>
+    </div>
+
+    <app-comment [postId]="postId"></app-comment>
+  </div>
+</div>

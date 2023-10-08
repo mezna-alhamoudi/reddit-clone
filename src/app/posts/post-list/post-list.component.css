@@ -1,0 +1,55 @@
+/* Updated CSS with additional colors and Read more button */
+
+.reddit-clone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f5f0;
+}
+
+.post-list-card {
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.post-item {
+  border-bottom: 1px solid #EEE;
+  padding: 15px 0;
+}
+
+.post-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.post-item p {
+  margin: 10px 0;
+  color: #777;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align the button */
+  font-size: 14px;
+  color: #888888;
+}
+
+.read-more-button {
+  background-color: #FF4500; /* Reddit's orange color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+  background-color: #FF3700; /* Slightly darker shade on hover */
+}

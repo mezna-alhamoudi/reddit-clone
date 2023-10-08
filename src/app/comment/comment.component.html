@@ -1,0 +1,32 @@
+<div class="comment-list">
+    <!-- Comment Form -->
+    <div class="comment-form">
+      <textarea [(ngModel)]="newComment" name="newComment" placeholder="Add a comment"></textarea>
+      <button type="button" class="add-comment-button" (click)="addComment()">Add Comment</button>
+    </div>
+  
+    <!-- Comment View -->
+    <div class="comments">
+        <div *ngFor="let comment of comments" class="comment">
+            <p class="comment-author">{{ comment.userName }}</p>
+            
+            <ng-container *ngIf="editingCommentId !== comment.id">
+                <p class="comment-content">{{ comment.content }}</p>
+            </ng-container>
+            
+            <ng-container *ngIf="editingCommentId === comment.id">
+                <textarea [formControl]="contentControl"></textarea>
+
+                <button (click)="updateComment(comment.id)">Save</button>
+                <button (click)="cancelEdit()">Cancel</button>
+            </ng-container>
+        
+            <!-- Edit and Delete buttons for logged-in users -->
+            <div *ngIf="authService.loggedIn && authService.userName === comment.userName && editingCommentId !== comment.id">
+                <i class="fas fa-edit edit-icon" (click)="editComment(comment.id)"></i>
+                <i class="fas fa-trash delete-icon" (click)="deleteComment(comment)"></i>
+            </div>
+        </div>      
+    </div>
+  </div>
+  

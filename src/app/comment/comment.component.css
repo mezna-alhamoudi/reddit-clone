@@ -1,0 +1,95 @@
+/* comment-list.component.css */
+
+.comment-list {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .comment-form {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+  }
+  
+  .add-comment-button {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .add-comment-button:hover {
+    background-color: #FF3700;
+  }
+ 
+  
+  .comment {
+    border-bottom: 1px solid #EEE;
+    padding: 10px 0;
+  }
+  
+  .comment-author {
+    color: #FF4500;
+    font-weight: bold;
+  }
+  
+  .comment-content {
+    color: #333;
+    margin-top: 5px;
+  }
+  
+ 
+.edit-icon {
+    color: #007bff;
+    cursor: pointer; 
+    margin-right: 10px;
+  }
+  
+  .delete-icon {
+    color: #dc3545; 
+    cursor: pointer; 
+  }
+.add-comment-button {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .add-comment-button:hover {
+    background-color: #FF3700;
+  }
+  
+  .save-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #007AAB;
+  }
+  

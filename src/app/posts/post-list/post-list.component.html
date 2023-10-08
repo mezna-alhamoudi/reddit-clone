@@ -1,0 +1,15 @@
+<!-- post-list.component.html -->
+<div class="reddit-clone">
+  <div class="post-list-card">
+    <h2 class="post-heading">Posts</h2>
+    <div *ngFor="let post of posts" class="post-item">
+      <h3 class="post-title">{{ post.title }}</h3>
+      <p class="post-content">{{ post.content | slice:0:120 }}{{ post.content.length > 120 ? '...' : '' }}</p>
+      <div class="post-footer">
+        <span class="post-author">Posted by: {{ post.authorUsername }}</span>
+        <span class="comment-count">{{ post.commentCount }} comments</span>
+        <a [routerLink]="['/posts', post.id]" class="read-more-button">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<!-- create-post.component.html -->
+
+<div class="post-form">
+  <h2>Create Post</h2>
+
+  <form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        [(ngModel)]="post.title"
+        required
+        class="post-title-input"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content:</label>
+      <textarea
+        id="content"
+        name="content"
+        [(ngModel)]="post.content"
+        rows="5"
+        required
+        class="post-content-input"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="post-submit-button">Submit</button> <!-- Use class="post-submit-button" -->
+  </form>
+</div>
